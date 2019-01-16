@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <canvas id="c" height="100" width="100" style="border:1px"></canvas>
+<script>
+    document.getElementById('c').width = 200;
+</script> -->
+    <meta charset="utf-8">
+    <title>S3</title>
+    <link rel="stylesheet" href="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/style.css">
+    <style type="text/css">
+
+    body {
+      padding: 0;
+      margin: 0;
+      pozition: relative;
+    }
+    .contcol {
+      position: absolute;
+      bottom: 76px;
+      text-align: right;
+    }
+    .contwheel {
+      position: absolute;
+      bottom: 76px;
+      text-align: left;
+    }
+    .contlig {
+      position: absolute;
+      bottom: 76px;
+      left: 50%;
+/*      text-align: center;*/
+    }
+    .contText {
+      position: absolute;
+      bottom: 80%;
+      left: 0px;
+      text-align: center;
+    }
+/*    .butMore{
+      position: absolute;
+      width: 100%;
+      bottom: 49px;
+      left: 0%;
+      text-align: center;
+      z-index: 15;
+}*/
+
+    .fonNiz{
+      position: absolute;
+      text-align: center;
+      z-index: 8;
+}
+
+
+
+
+    </style>
+        <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/Tween.js"></script>
+  </head>
+  <body>
+
+<div id = "page-preloader" class="preloader">
+<div class="loader">
+              </div>
+</div>
+
+<div id="text" class="contText">
+                <h1>BMW 3 Series <p> new sport line</h1>
+            </div>
+</div>
+
+
+
+<div class="contcol">
+                <input type="radio" class="radio" id="Blue" value="Blue" name="group"/>
+                <label for="Blue"></label>
+                <input type="radio" class="radio" id="Red" value="Red" name="group"/>
+                <label for="Red"></label>
+                <input type="radio" class="radio" id="Gray" value="Gray" name="group"/>
+                <label for="Gray"></label>
+                <input type="radio" class="radio" id="White" value="White" name="group" checked="checked"/>
+                <label for="White"></label>
+
+            </div>
+
+</div>
+
+
+<div class="contlig">
+                <input type="checkbox" class="checkbox" id="Lig" value="Lig" name="Ligh"/>
+                <label for="Lig"></label>
+            </div>
+
+</div>
+
+<div class="contwheel">
+                <input type="radio" class="radiowheel" id="Rims1" value="rims1" name="wheel" checked="checked"/>
+                <label for="Rims1"></label>
+                <input type="radio" class="radiowheel" id="Rims2" value="rims2" name="wheel"/>
+                <label for="Rims2"></label>
+            </div>
+
+</div>
+
+<!-- <div class="butMore">
+<button type="button">
+  <a href="https:htmlacademy.ru">Want to drive me?</a>
+</button>
+</div> -->
+
+                <!-- <a href="https:htmlacademy.ru"><button>Want to drive me?</button></a> -->
+
+
+
+<button onclick="location.href='https://htmlacademy.ru'" type="button">
+     <span>Want to drive me?</span></button>
+<div class="fonNiz">
+            </div>
+</div>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/Three58.js"></script>
+<!-- <script src="js/Detector.js"></script> -->
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/three.min.js"></script>
+     <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/Lensflare.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/FBXLoader.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/inflate.min.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/OrbitControls.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/dat.gui.min.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/stats.min.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/TrackballControls.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/Clock.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/THREEx.KeyboardState.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/THREEx.FullScreen.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/THREEx.WindowResize.js"></script>
+
+
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/postprocessing/EffectComposer.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/postprocessing/RenderPass.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/postprocessing/ShaderPass.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/postprocessing/MaskPass.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/shaders/CopyShader.js"></script>
+
+<!-- separate out the shaders specific to this demo -->
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/shaders/AdditiveBlendShader.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/shaders/HorizontalBlurShader.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/shaders/VerticalBlurShader.js"></script>
+<script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/shaders/LuminosityHighPassShader.js"></script>
+
+    <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+    <script src="https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/UAPOSNiygNxlYA/car/js/main.js"></script>
+<!-- ---------------- Custom Shader Code ------------------------ -->
+<script id="vertexShader" type="x-shader/x-vertex">
+uniform vec3 viewVector;
+uniform float c;
+uniform float p;
+varying float intensity;
+void main()
+{
+    vec3 vNormal = normalize( normalMatrix * normal );
+  vec3 vNormel = normalize( normalMatrix * viewVector );
+  intensity = pow( c - dot(vNormal, vNormel), p );
+
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+}
+</script>
+
+
+
+<!-- fragment shader a.k.a. pixel shader -->
+<script id="fragmentShader" type="x-shader/x-vertex">
+uniform vec3 glowColor;
+varying float intensity;
+void main()
+{
+  vec3 glow = glowColor * intensity;
+    gl_FragColor = vec4( glow, 1.0 );
+}
+</script>
+<!-- ----------------------------------------------------------- -->
+
+    <script id="fragment_shh" type="x-shader/x-fragment">
+      #ifdef GL_ES
+      precision highp float;
+      #endif
+
+      uniform sampler2D tOne;
+      uniform sampler2D tSec;
+
+      varying vec2 vUv;
+
+      void main(void)
+      {
+        vec3 c;
+        vec4 Ca = texture2D(tOne, vUv);
+        vec4 Cb = texture2D(tSec, vUv);
+        c = Ca.rgb * Ca.a + Cb.rgb * Cb.a * (1.0 - Ca.a);
+          gl_FragColor= vec4(c, 1.0);
+
+      }
+
+    </script>
+
+    <script id="vertex_shh" type="x-shader/x-vertex">
+
+      varying vec2 vUv;
+
+      void main()
+      {
+        vUv = uv;
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+        gl_Position = projectionMatrix * mvPosition;
+      }
+
+    </script>
+<!-- ---------------- 2 ------------------------ -->
+<!-- ---------------- 2Custom Shader Code ------------------------ -->
+<!-- <script id="vertexShader" type="x-shader/x-vertex">
+varying vec3 vNormal;
+void main()
+{
+    vNormal = normalize( normalMatrix * normal );
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+}
+</script> -->
+
+<!-- 2fragment shader a.k.a. pixel shader -->
+<!-- <script id="fragmentShader" type="x-shader/x-vertex">
+varying vec3 vNormal;
+void main()
+{
+  float intensity = pow( 0.1 - dot( vNormal, vec3( 0.0, 0.0, 0.5 ) ), 1.0 );
+    gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 ) * intensity;
+}
+</script> -->
+<!-- ----------------------------------------------------------- -->
+
+
+  </body>
+</html>
