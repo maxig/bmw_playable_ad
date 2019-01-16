@@ -425,7 +425,7 @@ var ground = new THREE.Mesh(
 //model
   var loader = new THREE.FBXLoader();
 
-  loader.load('car/model/bmw_opt4.fbx',
+  loader.load('https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/B2DHgNzaWeLaEg',
   function (fbx){
     bmw = fbx;
     fbx.add( light );
