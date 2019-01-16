@@ -425,7 +425,7 @@ var ground = new THREE.Mesh(
 //model
   var loader = new THREE.FBXLoader();
 
-  loader.load('https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/B2DHgNzaWeLaEg',
+  loader.load('https://downloader.disk.yandex.ru/disk/656e8f6b3fdd56516e056b325eeb31cdc3a9aa7d557d94ae9260bae425a7099b/5c3f643e/G1M75yWKAJ2SD9RA4qRsz5QmRDeQf0zU8HmB0J5WqVLvlJV-ZqZ18XQ99v4oa_sHuFLyN6_9t8aLJED66O7DpQ%3D%3D?uid=0&filename=bmw_opt4.fbx&disposition=attachment&hash=RsW0p0eJ6EqxCjwrsbpMTNbCxneZs2iD0prxZm%2BKgoECFsvkavejyVUaY/zAR1%2Bb/CH%2B%2BsnE5duAiqM/EjDILQ%3D%3D%3A&limit=0&content_type=application%2Foctet-stream&fsize=35113420&hid=35e5d51e2268c20d8d815113a469e993&media_type=image&tknv=v2',
   function (fbx){
     bmw = fbx;
     fbx.add( light );
